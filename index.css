@@ -1,0 +1,197 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: whitesmoke;
+    /* font-family: 'Kalam', cursive; */
+}
+.navbar-first{
+   background-color: white;
+   margin-top:20px;
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-around;
+   box-shadow: 0px 2px 3px lightgray;
+   /* align-items: center; */
+}
+.left-div{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    
+}
+.left-div > span{
+    margin-left: 15px;
+}
+.left-div > .other{
+    border-bottom: 2px solid;
+}
+.expand{
+    color: orangered;
+}
+.right-div{
+    display: flex;
+    flex-flow: row wrap;
+}
+.right-div > div{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin-left: 50px;
+}
+.right-div > div > span{
+    margin-left: 10px;
+}
+
+
+
+.navbar-second{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 2px 2px lightgray;
+}
+
+
+.navbar-second > .menu2 > span{
+    margin-left: 65px;
+    color: darkgray;
+    font-weight: 900;
+}
+
+.card-container{
+    padding: 60px 100px;
+}
+.card{
+    background-color: white;
+    height: 460px;
+    padding: 10px;
+    width: 250px;
+}
+.card > img{
+   width: 250px;
+}
+
+.food-details > .bullet{
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: black;
+    
+}
+.food-details{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightgray;
+}
+.card > .food-details > .star-rating{
+    background-color: orangered;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    color: white;
+    padding: 3px;
+}
+
+.card10 > .food-details > .star-rating{
+    background-color: green;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    color: white;
+    padding: 3px;
+}
+
+.card5 > .food-details > .star-rating{
+    background-color: green;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    color: white;
+    padding: 3px;
+}
+
+.card4 > .food-details > .star-rating{
+    background-color: green;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    color: white;
+    padding: 3px;
+}
+
+.offer-details{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    font-size: 14px;
+    color: maroon;
+    margin-top: 10px;
+}
+.offer-details > .off{
+    margin-left: 10px;
+}
+.star{
+    font-size: 16px;
+}
+.about-food,.time,.rupees{
+    color: darkgray;
+    font-weight: 600;
+}
+.hidden-link{
+    text-align: center;
+    border: 2px solid lightgray;
+    display: none;
+    padding: 5px;
+    margin: 5px -10px;
+    background-color: white;
+}
+.hidden-link > a{
+    text-decoration: none;
+    color: dodgerblue;
+}
+.card:hover > .hidden-link{
+    display: block;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 70px;
+    grid-column-gap: 20px;
+}
+
+.footer{
+    display: flex;
+    background: #000;
+    color: white;
+    flex-flow: row wrap;
+    height: 70vh;
+    justify-content: space-around;
+}
+.footer > .company,.contact,.legal,.Apps{
+    display: flex;
+    flex-flow: column wrap;
+    padding: 10px;
+    line-height: 30px;
+}
+.footer > .Apps > img{
+   width:300px;
+   height: 100px;
+   margin-top: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .card-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+  }
